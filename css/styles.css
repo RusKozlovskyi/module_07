@@ -111,7 +111,7 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  background-image: url(./img/Icon-Basket.png);
+  background-image: url(/img/Icon-Basket.png);
   right: 20%;
   top: 20%;
   background-repeat: no-repeat;
@@ -122,7 +122,7 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  background-image: url(./img/Icon-Laptop.png);
+  background-image: url(/img/Icon-Laptop.png);
   right: 20%;
   top: 20%;
   background-repeat: no-repeat;
@@ -132,7 +132,7 @@
   content: "";
   width: 40px;
   height: 40px;
-  background-image: url(./img/Icon-Locked.png);
+  background-image: url(/img/Icon-Locked.png);
   right: 20%;
   top: 20%;
   background-repeat: no-repeat;
@@ -222,7 +222,7 @@ textarea::placeholder {
   text-transform: uppercase;
   color: rgb(187, 187, 187);
   padding-left: 10px;
-  padding-top: 18px;
+  padding-top: 20px;
 }
 
 .button {
