@@ -1,0 +1,253 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+.container {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  width: 940px;
+  margin-bottom: 125px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  display: block;
+  color: rgb(254, 209, 54);
+  height: 26px;
+  width: 82px;
+  margin-top: 35px;
+}
+
+.header_menu {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  height: 14px;
+  width: 480px;
+  margin-top: 48px;
+}
+
+.header_menu a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0;
+  color: rgb(0, 0, 0);
+}
+
+.header_menu a:hover {
+  color: rgb(254, 209, 54);
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+
+.services {
+  text-align: center;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-bottom: 110px;
+}
+
+.title_1 {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 39px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+.sub_title_1 {
+  display: block;
+  font-family: "Caladea", serif;
+  font-style: italic;
+  font-size: 16px;
+  color: rgb(119, 119, 119);
+  margin-bottom: 70px;
+}
+
+.services_list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.list_item {
+  width: 280px;
+  text-align: center;
+}
+
+.list_item_img {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  border: 2px solid rgb(254, 209, 54);
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.list_item_img::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url(/img/Icon-Basket.png);
+  right: 20%;
+  top: 20%;
+  background-repeat: no-repeat;
+}
+
+.list_item_img:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url(/img/Icon-Laptop.png);
+  right: 20%;
+  top: 20%;
+  background-repeat: no-repeat;
+}
+
+.list_item_img:nth-child(3)::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url(/img/Icon-Locked.png);
+  right: 20%;
+  top: 20%;
+  background-repeat: no-repeat;
+}
+
+.list_item h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 15px;
+}
+
+.list_item p {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(119, 119, 119);
+}
+
+.contact {
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+  width: 1400px;
+  height: 675px;
+  background-color: rgb(34, 34, 34);
+  position: relative;
+  z-index: -1;
+}
+
+.title_2 {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 39px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin-bottom: 13px;
+  padding-top: 105px;
+}
+
+.sub_title_2 {
+  display: block;
+  font-family: "Caladea", serif;
+  font-style: italic;
+  font-size: 16px;
+  color: rgb(119, 119, 119);
+  margin-bottom: 78px;
+}
+
+input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 15%;
+  width: 455px;
+  height: 52px;
+  margin-top: 26px;
+  border-radius: 2%;
+}
+
+input::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(187, 187, 187);
+  padding-left: 10px;
+}
+
+textarea {
+  position: absolute;
+  left: 50%;
+  bottom: 31%;
+  width: 455px;
+  height: 210px;
+  overflow: auto;
+  resize: none;
+  border-radius: 2%;
+}
+
+textarea::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(187, 187, 187);
+  padding-left: 10px;
+  padding-top: 17px;
+}
+
+.button {
+  position: absolute;
+  top: 80%;
+  right: 42%;
+  width: 240px;
+  height: 65px;
+  border: none;
+  border-radius: 2%;
+  background-color: rgb(254, 209, 54);
+}
+
+.button a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.img_map {
+  position: absolute;
+  z-index: 0;
+  left: 56%;
+  bottom: 5%;
+}
