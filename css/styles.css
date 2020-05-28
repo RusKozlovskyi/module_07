@@ -90,12 +90,12 @@
   justify-content: space-between;
 }
 
-.list_item {
+.services_list li {
   width: 280px;
   text-align: center;
 }
 
-.list_item_img {
+.list_item_basket {
   width: 70px;
   height: 70px;
   position: relative;
@@ -106,34 +106,57 @@
   margin-bottom: 25px;
 }
 
-.list_item_img::before {
+.list_item_basket::before {
   content: "";
   position: absolute;
   width: 40px;
   height: 40px;
-  background-image: url(./img/Icon-Basket.png);
+  background-image: url(../img/Icon-Basket.png);
   right: 20%;
   top: 20%;
   background-repeat: no-repeat;
 }
 
-.list_item_img:nth-child(2)::before {
+.list_item_laptop {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  border: 2px solid rgb(254, 209, 54);
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.list_item_laptop::before {
   content: "";
   position: absolute;
   width: 40px;
   height: 40px;
-  background-image: url(./img/Icon-Laptop.png);
+  background-image: url(../img/Icon-Laptop.png);
   right: 20%;
   top: 20%;
   background-repeat: no-repeat;
 }
 
-.list_item_img:nth-child(3)::before {
+.list_item_locked {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  border: 2px solid rgb(254, 209, 54);
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.list_item_locked::before {
   content: "";
+  position: absolute;
   width: 40px;
   height: 40px;
-  background-image: url(./img/Icon-Locked.png);
-  right: 20%;
+  background-image: url(../img/Icon-Locked.png);
+  right: 12%;
   top: 20%;
   background-repeat: no-repeat;
 }
@@ -184,14 +207,19 @@
   margin-bottom: 78px;
 }
 
-input {
+.input {
   display: flex;
   flex-direction: column;
-  position: relative;
-  left: 15%;
+  justify-content: space-between;
+  width: 455px;
+  height: 210px;
+  position: absolute;
+  left: 16%;
+}
+
+input {
   width: 455px;
   height: 52px;
-  margin-top: 26px;
   border-radius: 2%;
 }
 
@@ -204,14 +232,22 @@ input::placeholder {
   padding-left: 10px;
 }
 
-textarea {
+.textarea {
+  display: flex;
+  flex-direction: row;
+  width: 455px;
+  height: 210px;
   position: absolute;
   left: 50%;
   bottom: 31%;
-  width: 455px;
-  height: 210px;
   overflow: auto;
   resize: none;
+  border-radius: 2%;
+}
+
+textarea {
+  width: 455px;
+  height: 210px;
   border-radius: 2%;
 }
 
@@ -226,23 +262,24 @@ textarea::placeholder {
 }
 
 .button {
+  display: flex;
   position: absolute;
   top: 80%;
   right: 42%;
-  width: 240px;
-  height: 65px;
-  border: none;
-  border-radius: 2%;
-  background-color: rgb(254, 209, 54);
 }
 
-.button a {
+input[type="submit"] {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  width: 240px;
+  height: 65px;
   text-decoration: none;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
+  background-color: rgb(254, 209, 54);
+  border: none;
+  border-radius: 2%;
 }
 
 .img_map {
