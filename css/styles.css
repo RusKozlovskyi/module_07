@@ -286,7 +286,7 @@ textarea:invalid:not(:placeholder-shown) {
   right: 42%;
 }
 
-input[type="submit"] {
+button[type="submit"] {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 18px;
