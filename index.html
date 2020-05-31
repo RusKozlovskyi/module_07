@@ -66,13 +66,14 @@
           <span class="sub_title_2">Proin iaculis purus consequat sem cure</span>
           <form action="Url">
             <div class="input">
-              <input type="text" placeholder="your name*">
-              <input type="email" placeholder="your e-mail*">
-              <input type="text" placeholder="subject">
+              <input type="text" placeholder="your name*"
+                pattern="[A-Za-z]{1,12}" required>
+              <input type="email" placeholder="your e-mail*" required>
+              <input type="text" placeholder="subject" required>
             </div>
             <div class="textarea">
               <textarea name="message" cols="30" rows="10"
-                placeholder="your message*"></textarea>
+                placeholder="your message*" pattern="[A-Za-z]{1,12}" required></textarea>
             </div>
             <div class="button">
               <input type="submit" value="send message">
