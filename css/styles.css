@@ -252,6 +252,7 @@ input:invalid:not(:placeholder-shown) {
   overflow: auto;
   resize: none;
   border-radius: 2px;
+  z-index: 2;
 }
 
 textarea {
@@ -259,6 +260,7 @@ textarea {
   width: 455px;
   height: 210px;
   border-radius: 2px;
+  z-index: 2;
 }
 
 textarea::placeholder {
